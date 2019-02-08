@@ -1,0 +1,2 @@
+# Perfect-Pro-theme
+Perfectpro is an attractive joomla theme executed deftly to accord any business/corporate website. The free joomla theme has a mesmerizing banner with learn more link whose url can be varied. The banner displays multiple images in a slide show effect giving the professional theme an exquisite look. The template displays latest article on the FrontPage delivery the current updates and news of the organization to keep the customers and website followers posted on the growth and performance of the company.
