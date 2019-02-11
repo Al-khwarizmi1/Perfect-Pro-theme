@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<install version="1.6" type="template" client="site" method="upgrade">
+    <name>Perfectpro</name>
+    <creationDate>october 2011</creationDate>
+    <author>Apptha Team</author>
+    <authorEmail>support@apptha.com</authorEmail>
+    <authorUrl>http://www.apptha.com</authorUrl>
+    <copyright></copyright>
+    <license></license>
+    <version>1.1</version>
+    <description>
+         <![CDATA[
+        <style>
+        table.adminform th{padding:0px;}
+        </style>
+        <div style="/* Opera 11.10+ */
+        background: -o-linear-gradient(top, rgba(255,255,255,1), rgba(232,232,232,1));
+
+        /* Firefox 3.6+ */
+        background: -moz-linear-gradient(top, rgba(255,255,255,1), rgba(232,232,232,1));
+
+        /* Chrome 7+ & Safari 5.03+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255,255,255,1)), color-stop(1, rgba(232,232,232,1)));
+
+        /* IE5.5 - IE7 */
+        filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#FFFFFFFF,EndColorStr=#FFE8E8E8);
+
+        /* IE8 */
+        -ms-filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#FFFFFFFF,EndColorStr=#FFE8E8E8);">
+        <div style="float: left; margin:10px 10px 10px 10px;">
+                <a href="http://www.apptha.com/" target="_blank">
+                    <img src="../templates/perfectpro/images/preview.png" alt="Apptha! Prefectpro" align="left" />
+                </a>
+            </div>
+            <div style="clear:both;"></div>
+        <p style="font-style:normal;font-size:13px;font-weight:normal;">Perfectpro is an attractive Free Joomla theme executed deftly to accord any business or corporate website.</p>
+            <div style="margin-left:10px;padding-bottom:10px;">
+                <a href="http://www.apptha.com/download.php?name=documentation.pdf&link=images/Themes/Joomla/prefectpro/documentation.pdf">Click here to download the documentation</a><br/>
+            </div>
+            </div>
+     ]]>
+    </description>
+    <files>
+        <folder>css</folder>
+        <folder>html</folder>
+        <folder>images</folder>
+        <folder>element</folder>
+        <folder>js</folder>
+        <filename>params.ini</filename>
+        <filename>index.html</filename>
+        <filename>index.php</filename>
+        <filename>templateDetails.xml</filename>
+        <filename>template_thumbnail.png</filename>
+        <filename>favicon.ico</filename>
+        <filename>component.php</filename>
+    </files>
+    <positions>
+        <position>perfect-banner</position>
+        <position>perfect-category</position>
+        <position>perfect-bottom</position>
+        <position>perfect-footermenu</position>
+    </positions>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.tpl_perfectpro.sys.ini</language>
+    </languages>
+     <params addpath="/templates/perfectpro/element">
+        <param type="spacer" default="Logo Settings"/>
+        <param name="logo" type="Media" default="" label="Upload Logo Image:" description="Upload only the Logoimages" directory="  " />
+        <param  name="facebook_url"  type="text" default="" label="Facebook Page URL" description="Enter the facebook page url" />
+        <param  name="twitter_url" type="text" default="" label="Twitter Page URL" description="Enter the twitter page url" />
+        <param  name="flickr_url"  type="text" default="" label="Flickr Page URL" description="Enter the flickr page url" />
+        <param  name="gmail_url"  type="text"  default="" label="Gmail Page URL" description="Enter the Gmail page url" />
+     </params>
+    <config>
+        <fields name="params">
+            <fieldset   name="basic" >
+                <field  name="logo" type="Media" default="" label="Upload Logo Image:" description="Upload only the Logoimages" directory="  " />
+                <field  name="facebook_url"  type="text" default="" label="Facebook Page URL" description="Enter the facebook page url" />
+                <field  name="twitter_url" type="text" default="" label="Twitter Page URL" description="Enter the twitter page url" />
+                <field  name="flickr_url"  type="text" default="" label="Flickr Page URL" description="Enter the flickr page url" />
+                <field  name="gmail_url"  type="text"  default="" label="Gmail Page URL" description="Enter the Gmail page url" />
+            </fieldset>
+        </fields>
+    </config>
+</install>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" client="site" method="upgrade">
+    <name>Category ( Prefectpro )</name>
+    <author>Apptha Team</author>
+    <creationDate>october 2011</creationDate>
+    <copyright></copyright>
+    <license></license>
+    <authorEmail>support@apptha.com</authorEmail>
+    <authorUrl>www.apptha.com</authorUrl>
+    <version>1.1</version>
+    <description>This module shows the joomla Category</description>
+    <files>
+        <filename module="mod_category">mod_category.php</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+    </files>
+</install>

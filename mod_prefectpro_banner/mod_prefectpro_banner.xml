@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.6.0" client="site" method="upgrade">
+    <name>Prefectpro Banner Slider ( Prefectpro )</name>
+    <author>Apptha Team</author>
+    <creationDate>November 2011</creationDate>
+    <copyright></copyright>
+    <authorEmail>support@apptha.com</authorEmail>
+    <authorUrl>http://www.apptha.com</authorUrl>
+    <version>1.1</version>
+    <description>
+	Enable to multi-select Banner Clients in Selection Box of Contus Banner slider
+    </description>
+    <scriptfile>script.php</scriptfile>
+    <files>
+        <filename module="mod_prefectpro_banner">mod_prefectpro_banner.xml</filename>
+        <filename module="mod_prefectpro_banner">mod_prefectpro_banner.php</filename>
+        <filename module="mod_prefectpro_banner">helper.php</filename>
+        <filename module="mod_prefectpro_banner">index.html</filename>
+        <folder>tmpl</folder>
+        <folder>js</folder>
+        <folder>elements</folder>
+    </files>
+    <params addpath="/modules/mod_prefectpro_banner/elements">
+        <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the CSS class of the Module. This allows for individual Module styling." />
+        <param name="banner_clientid" type="clients" default="" label="Banner clients" description="Clients" />
+        <param name="banner_limit" type="text" default="" label="Banner limit" description="Limits how many banners will be shown." />
+        <param name="categories_id" type="categories" section="com_banner" default="" label="Categories" description="Categories" />
+        <param name="ordering" type="list" default="0" label="Ordering" description="List the banner in the ordering you had set upon the backend of joomla banner component">
+            <option value="0">Ordering</option>
+            <option value="random">Randomise</option>
+        </param>
+        <param name="@spacer" type="spacer" default="" label="" description="" />
+        <param name="width" type="text" default="960" label="Image Width" description="Image Width" />
+        <param name="height" type="text" default="300" label="Image Height" description="Image Height"/>
+        <param name="slideTimer" type="text" default="600" label="Slide Timer" description="Slide Timer" />
+        <param name="autoscroll" type="list" default="Yes" label="Auto scroll" description="Auto scroll">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+        <param name="bannerEffect" type="list" default="scrollHorz" label="Banner Effect" description="Select the Transition Banner Effect">
+            <option value="all">all</option>
+            <option value="blindX">blindX</option>
+            <option value="blindY">blindY</option>
+            <option value="blindZ">blindZ</option>
+            <option value="cover">cover</option>
+            <option value="curtainY">curtainY</option>
+            <option value="fade">fade</option>
+            <option value="fadeZoom">fadeZoom</option>
+            <option value="growX">growX</option>
+            <option value="growY">growY</option>
+            <option value="none">None</option>
+            <option value="scrollUp">scrollUp</option>
+            <option value="scrollDown">scrollDown</option>
+            <option value="scrollLeft">scrollLeft</option>
+            <option value="scrollRight">scrollRight</option>
+            <option value="scrollHorz">scrollHorz</option>
+            <option value="scrollVert">scrollVert</option>
+            <option value="shuffle">shuffle</option>
+            <option value="slideX">slideX</option>
+            <option value="slideY">slideY</option>
+            <option value="toss">toss</option>
+            <option value="turnUp">turnUp</option>
+            <option value="turnDown">turnDown</option>
+            <option value="turnLeft">turnLeft</option>
+            <option value="turnRight">turnRight</option>
+            <option value="uncover">uncover</option>
+            <option value="wipe">wipe</option>
+            <option value="zoom">zoom</option>
+        </param>
+    </params>
+    <config>
+        <fields name="params" addfieldpath="/administrator/components/com_banners/models/fields">
+        <fieldset name="basic" >
+            <field name="banner_clientid" type="bannerclient" default="" label="Banner clients" description="Clients" />
+            <field name="banner_limit" type="integer" first="1" last="10" step="1" default="5" label="Banner limit" description="Limits how many banners will be shown." />
+            <field name="categories_id" type="category" extension="com_banners" multiple="true" size="5" default="" label="Categories" description="Categories" />
+            <field name="ordering" type="list" default="0" label="Ordering" description="List the banner in the ordering you had set upon the backend of joomla banner component">
+                <option value="0">Ordering</option>
+                <option value="random">Randomise</option>
+            </field>
+            <field name="@spacer" type="spacer" default="" label="" description="" />
+            <field name="width" type="text" default="960" label="Image Width" description="Image Width" />
+            <field name="height" type="text" default="300" label="Image Height" description="Image Height"/>
+            <field name="slideTimer" type="text" default="600" label="Slide Timer" description="Slide Timer" />
+            <field name="autoscroll" type="list" default="1" label="Auto scroll" description="Auto scroll">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field>
+            <field name="bannerEffect" type="list" default="scrollHorz" label="Banner Effect" description="Select the Transition Banner Effect">
+                <option value="all">all</option>
+                <option value="blindX">blindX</option>
+                <option value="blindY">blindY</option>
+                <option value="blindZ">blindZ</option>
+                <option value="cover">cover</option>
+                <option value="curtainY">curtainY</option>
+                <option value="fade">fade</option>
+                <option value="fadeZoom">fadeZoom</option>
+                <option value="growX">growX</option>
+                <option value="growY">growY</option>
+                <option value="none">None</option>
+                <option value="scrollUp">scrollUp</option>
+                <option value="scrollDown">scrollDown</option>
+                <option value="scrollLeft">scrollLeft</option>
+                <option value="scrollRight">scrollRight</option>
+                <option value="scrollHorz">scrollHorz</option>
+                <option value="scrollVert">scrollVert</option>
+                <option value="shuffle">shuffle</option>
+                <option value="slideX">slideX</option>
+                <option value="slideY">slideY</option>
+                <option value="toss">toss</option>
+                <option value="turnUp">turnUp</option>
+                <option value="turnDown">turnDown</option>
+                <option value="turnLeft">turnLeft</option>
+                <option value="turnRight">turnRight</option>
+                <option value="uncover">uncover</option>
+                <option value="wipe">wipe</option>
+                <option value="zoom">zoom</option>
+            </field>
+    </fieldset>
+    </fields>
+    </config>
+</install>
